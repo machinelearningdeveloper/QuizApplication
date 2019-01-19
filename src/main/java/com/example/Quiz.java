@@ -26,6 +26,7 @@ public class Quiz {
             while (answer == null) {
                 // print out the question
                 System.out.println(question);
+                System.out.print("> ");
 
                 Scanner in = new Scanner(System.in);
                 // get the selected answer and print a message
@@ -46,7 +47,7 @@ public class Quiz {
                 System.out.println("Better luck next time.");
             }
         }
-        System.out.println("\n1You have completed the quiz.\n");
+        System.out.println("\nYou have completed the quiz.\n");
         System.out.println("Correct: " + this.numCorrect);
         System.out.println("Total: " + this.questions.size());
         System.out.println("Percentage: " + ((double)this.numCorrect / this.questions.size() * 100) + "%");
